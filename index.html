@@ -1,17 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>&#x1F4BB; Elvan TEKTAŞ | Yazılım Geliştirici</title> 
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elvan Tektaş | İletişim</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="loading-container">
-        <div class="logo"></div>
-       <div class="loading-text">
-            <span>H</span><span>a</span><span>z</span><span>ı</span><span>r</span><span>l</span><span>a</span><span>n</span><span>ı</span><span>y</span><span>o</span><span>r</span>
-        </div>
+
+  <div class="container">
+    <div class="left">
+      <h1>Merhaba, Ben <span>Elvan Tektaş</span></h1>
+      <p>
+        Yazılım geliştirme ve destek alanında uzmanım.  
+        Freelance olarak aşağıdaki konularda hizmet veriyorum:
+      </p>
+
+      <ul class="skills">
+        <li>🖥️ Masaüstü Geliştirme (C#, .NET)</li>
+        <li>🌐 Web Geliştirme (ASP.NET, HTML, CSS, JS)</li>
+        <li>🗄️ Veritabanı & Raporlama (SQL, XtraReport)</li>
+        <li>🧩 WordPress Geliştirme</li>
+      </ul>
+
+      <div class="socials">
+        <a href="https://linkedin.com/in/elvantektas" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/tektaselvan" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://medium.com/@elvantektas" target="_blank"><i class="fab fa-medium"></i></a>
+      </div>
     </div>
+
+    <div class="right">
+      <form action="https://formspree.io/f/xyzformid" method="POST">
+        <h2>İletişime Geç</h2>
+
+        <label>Ad Soyad*</label>
+        <input type="text" name="name" required>
+
+        <label>E-posta*</label>
+        <input type="email" name="email" required>
+
+        <label>Destek Konusu*</label>
+        <select name="subject" required>
+          <option value="WordPress">WordPress</option>
+          <option value="Masaüstü Geliştirme">Masaüstü Geliştirme</option>
+          <option value="Web Geliştirme">Web Geliştirme</option>
+          <option value="Veritabanı ve Raporlama">Veritabanı ve Raporlama</option>
+        </select>
+
+        <label>Mesaj*</label>
+        <textarea name="message" rows="5" required></textarea>
+
+        <button type="submit">Gönder</button>
+      </form>
+    </div>
+  </div>
+
 </body>
 </html>
